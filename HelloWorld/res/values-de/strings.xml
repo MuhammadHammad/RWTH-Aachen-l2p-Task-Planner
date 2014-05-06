@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="btn_select_city">Wähle Stadt</string>
+    <string name="no_city_selected">Keine Stadt ausgewählt</string>
+
+</resources>

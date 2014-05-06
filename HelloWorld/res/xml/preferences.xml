@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="category 1" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showUrls"
+            android:summaryOff="Do not show URLs"
+            android:summaryOn="Show URLs"
+            android:title="Show URLs" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/numInt"
+            android:entryValues="@array/numInt"
+            android:key="num"
+            android:title="# of Items" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
