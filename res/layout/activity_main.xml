@@ -1,46 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#800080"
-    android:orientation="vertical"
-    android:padding="30dp" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taskplanner.MainActivity"
+    tools:ignore="MergeRootFrame" />
 
-    <TextView
-        android:id="@+id/welcometv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:paddingBottom="10dp"
-        android:textColor="#ffffff"
-        android:textColorLink="#ffffff"
-        android:textStyle="bold" />
-
-       <TextView
-           android:id="@+id/welcometexttv"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Kidnly login below:"
-           android:paddingBottom="5dp"
-           android:textColor="#ffffff"
-           android:textColorLink="#ffffff" />
-
-       <EditText
-           android:id="@+id/usernametxt"
-           android:layout_width="194dp"
-           android:layout_height="wrap_content"
-           android:background="#ffffff"
-           android:layout_marginBottom="10px"
-           android:ems="10" >
-		   
-           <requestFocus />
-       </EditText>
-
-       <EditText
-           android:id="@+id/editText1"
-           android:layout_width="194dp"
-           android:layout_height="wrap_content"
-           android:background="#ffffff"
-           android:ems="10"
-           android:inputType="textPassword" />
-    
-</LinearLayout>
