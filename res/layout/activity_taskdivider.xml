@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Assignment1" />
+    
+     <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/textView2" >
+
+         <RadioButton
+             android:id="@+id/radio0"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:checked="true"
+             android:text="Set Reminder" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divide into subtasks" />
+
+           
+        </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_marginTop="28dp"
+        android:stretchColumns="0,1,2"
+        android:layout_below="@+id/radioGroup1" >
+    	<TableRow
+	        android:id="@+id/tableRow1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="14dp"
+	        android:layout_weight="1" >
+    	</TableRow>
+   </TableLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginLeft="22dp"
+        android:onClick="btn_click"
+        android:text="Add subtask" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn"
+        android:layout_alignBottom="@+id/btn"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:text="Save" 
+        android:onClick="btn_save"/>
+    
+</RelativeLayout>
